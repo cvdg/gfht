@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./0001_two_sum/Cargo.toml"
+    ]
+}
