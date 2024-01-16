@@ -23,7 +23,7 @@
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-struct Solution;
+pub struct Solution;
 
 // =============================================================
 

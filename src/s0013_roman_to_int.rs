@@ -61,7 +61,7 @@
 // I             1
 //
 
-struct Solution;
+pub struct Solution;
 
 // === submission begin ========================================
 

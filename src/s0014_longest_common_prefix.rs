@@ -19,14 +19,39 @@
 //
 //
 
-struct Solution;
+pub struct Solution;
 
 // === submission begin ========================================
 
 impl Solution {
     #[allow(dead_code)]
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
-        "".to_string()
+        let mut prefix = String::new();
+        let mut same = true;
+
+        // loop over all charactes in the first string
+        for (i1, c1) in strs[0].char_indices() {
+            // loop over strings from the second
+            for s in &strs[1..] {
+                if s.len() <= i1 {
+                    same = false;
+                    break;
+                } else {
+                    let c2 = s.chars().nth(i1).unwrap();
+                    if c1 != c2 {
+                        same = false;
+                        break;
+                    }
+                }
+            }
+
+            if same {
+                prefix.push(c1);
+            } else {
+                break;
+            }
+        }
+        prefix
     }
 }
 

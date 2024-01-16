@@ -27,7 +27,7 @@
 // Output: [0,1]
 //
 
-struct Solution;
+pub struct Solution;
 
 // =============================================================
 
@@ -58,7 +58,7 @@ mod tests {
     fn example1() {
         assert_eq!(vec![0, 1], Solution::two_sum(vec![2, 7, 11, 15], 9));
     }
-    
+
     #[test]
     fn example2() {
         assert_eq!(vec![1, 2], Solution::two_sum(vec![3, 2, 4], 6));
