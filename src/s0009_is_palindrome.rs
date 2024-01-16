@@ -23,7 +23,7 @@
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-struct Solution;
+pub struct Solution;
 
 // =============================================================
 
@@ -56,10 +56,17 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
-        assert_eq!(2, 1 + 1);
+    fn example1() {
         assert_eq!(true, Solution::is_palindrome(121));
+    }
+
+    #[test]
+    fn example2() {
         assert_eq!(false, Solution::is_palindrome(-121));
+    }
+
+    #[test]
+    fn example3() {
         assert_eq!(false, Solution::is_palindrome(10));
     }
 }

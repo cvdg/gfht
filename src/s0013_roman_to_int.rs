@@ -61,7 +61,7 @@
 // I             1
 //
 
-struct Solution;
+pub struct Solution;
 
 // === submission begin ========================================
 
@@ -106,10 +106,17 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
-        assert_eq!(2, 1 + 1);
+    fn example1() {
         assert_eq!(3, Solution::roman_to_int("III".to_string()));
+    }
+
+    #[test]
+    fn example2() {
         assert_eq!(58, Solution::roman_to_int("LVIII".to_string()));
+    }
+
+    #[test]
+    fn example3() {
         assert_eq!(1994, Solution::roman_to_int("MCMXCIV".to_string()));
     }
 }
