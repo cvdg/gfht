@@ -2,20 +2,28 @@ name: CI
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - Cargo.lock
+      - Cargo.toml
+      - src/**
   pull_request:
     branches: [ "main" ]
+    paths:
+      - Cargo.lock
+      - Cargo.toml
+      - src/**
 env:
   CARGO_TERM_COLOR: always
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: rustup
-      run: rustup update stable && rustup default stable
-    - name: cargo build
-      run: cargo build --verbose
-    - name: cargo test
-      run: cargo test --verbose
-    - name: cargo check
-      run: cargo check --verbose
+      - uses: actions/checkout@v3
+      - name: rustup
+        run: rustup update stable && rustup default stable
+      - name: cargo build
+        run: cargo build --verbose
+      - name: cargo test
+        run: cargo test --verbose
+      - name: cargo check
+        run: cargo check --verbose
