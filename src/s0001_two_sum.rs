@@ -27,8 +27,6 @@
 // Output: [0,1]
 //
 
-// use std::collections::HashMap;
-
 struct Solution;
 
 // =============================================================
