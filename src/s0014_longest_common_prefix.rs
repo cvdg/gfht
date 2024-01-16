@@ -37,11 +37,6 @@ mod tests {
     use super::*;
 
     #[test]
-    fn sanity() {
-        assert_eq!(2, 1 + 1);
-    }
-    
-    #[test]
     fn example1() {
         assert_eq!(
             "fl",
