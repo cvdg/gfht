@@ -1,3 +1,5 @@
+[![CI](https://github.com/cvdg/gfht/actions/workflows/ci.yml/badge.svg)](https://github.com/cvdg/gfht/actions/workflows/ci.yml)
+
 # gfht / gunfight
 
 Exercises from [LeetCode](https://www.leetcode.com/) 
