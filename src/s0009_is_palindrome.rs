@@ -45,7 +45,7 @@ impl Solution {
                 return true;
             }
         }
-        return false;
+        false
     }
 }
 
