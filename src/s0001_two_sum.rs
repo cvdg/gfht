@@ -25,12 +25,13 @@
 // Output: [0,1]
 //
 
+#[allow(dead_code)]
+
 pub struct Solution;
 
 // =============================================================
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let n = nums.len();
         for i in 0..n {
